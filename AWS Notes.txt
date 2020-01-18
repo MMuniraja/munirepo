@@ -1,0 +1,58 @@
+AWS (25/09/2019)
+====
+Subnet Rules
+============
+
+255.255.255.255 ==> IPv4 32-bit
+Class A
+Start - 0.0.0.0/0 => 10.0.0.0/8 => CIDR ==> VPN Address
+End - 126.0.0.0/8
+		| -----
+		|---> Network Address (Static)
+127.something is allocated for loopback address
+Class B
+128.0.0.0/8
+191.0.0.0/8 ==> Classless Inter Domain Routing(CIDR)
+Class C
+192.0.0.0/8
+192.168.0.0/16 ==> CIDR( You can reserve the private address)
+223.0.0.0/8
+Class D ==> Multicast purpose(Media)
+224.0.0.0/8
+239.0.0.0/8
+Class E  ==> Research Purpose
+240.0.0.0/8
+===============
+Business Layers
+===============
+Application layer
+Session layer 
+Presentation Layer
+Transport Layer
+Network Layer
+Datalink Layer
+Physical Layer
+==========================
+VPC - Jump - --> reserve address as 172.16.0.0/16
+From VPC jump we need to create a subnet . The address will be 172.16.1.0/24 --> It will provide the IP addresses
+Router to connect externally(External communication)  -> How the communication happened
+Internet gateway(IGW)
+Connect to vm
+===============
+Instance Types:-
+memory optimized
+cpu optimized
+disk optimized
+network optimized
+general purpose
+====================
+Purchasin option --> we can bid our instances on hourly basis
+
+
+===================================================================
+S3:
+===
+
+Standard
+Standard IA --> Infrequent access
+Reduce Redundancy --> Not required any more
